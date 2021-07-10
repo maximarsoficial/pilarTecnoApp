@@ -16,12 +16,12 @@ const height = Dimensions.get('window').height
 const width = Dimensions.get('window').width
 
 
-export default class Home extends React.Component {
+export default class PostEdit extends React.Component {
 
   _onHomePress = () => {
     Alert.alert(
-      "¡Hola!",
-      "Estas situado en nuestra vista principal",
+      "Hola",
+      "Ya te encuentras ahí",
       [
         { text: "OK", onPress: () => console.log("OK Pressed") }
       ]
@@ -46,6 +46,7 @@ export default class Home extends React.Component {
                   Principal
                 </Text>
               </TouchableOpacity>
+
               <TouchableOpacity style={[styles.button, { backgroundColor: 'rgba(238, 0, 238, 0.5)' }]}>
                 <Text style={styles.text}>
                   Perfil
@@ -67,8 +68,7 @@ export default class Home extends React.Component {
               </TouchableOpacity>
             </View>
           </View>
-
-        </ImageBackground>
+          </ImageBackground>
       </SafeAreaView>
     )
   }

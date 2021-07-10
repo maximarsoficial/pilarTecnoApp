@@ -10,23 +10,29 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-import Home from '../screens/Home'
+import Home from '../screens/Home';
+import AppStack from '../routs/app';
+import { NavigationContainer } from '@react-navigation/native';
+
 
 const height = Dimensions.get('window').height
 const width = Dimensions.get('window').width
 
 
- const App = () => {
+ const App = (props) => {
 
-    return( 
-        <Home />
-    )
+    return (
+      // <Home />
+      <NavigationContainer >
+        <AppStack />
+      </NavigationContainer>
+    );
 }
 
 const styles = StyleSheet.create({
   text: {
-    fontSize:30, 
-    fontWeight:'bold', 
+    fontSize:30,
+    fontWeight:'bold',
     color:'red',
     textAlign:'center'
   },
