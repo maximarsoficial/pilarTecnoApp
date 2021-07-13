@@ -15,11 +15,17 @@ import Home from '../screens/Home'
 const height = Dimensions.get('window').height
 const width = Dimensions.get('window').width
 
+import AppStack from '../routs/app';
+import { NavigationContainer } from '@react-navigation/native';
+
+
 
  const App = () => {
 
     return( 
-        <Home />
+      <NavigationContainer>
+      <AppStack />
+      </NavigationContainer>
     )
 }
 
