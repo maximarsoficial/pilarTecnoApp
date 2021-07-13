@@ -14,6 +14,8 @@ import {
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { Input } from 'react-native-elements';
 
+import {Button} from 'react-native-elements';
+
 const height = Dimensions.get('window').height
 const width = Dimensions.get('window').width
 
@@ -54,7 +56,13 @@ export default class Login extends React.Component {
             <Text style={styles.textButton}>
               REGISTRARSE
             </Text>
-          </TouchableOpacity>    
+          </TouchableOpacity>   
+
+          
+
+
+
+
         </ImageBackground>
     </SafeAreaView>
      

@@ -7,7 +7,7 @@ const Stack = createStackNavigator();
 
 export default AppStack = (props) => {
 
-    const isloged = true
+    const isloged = false
     return (
         <Stack.Navigator headerMode="none" >
             {
